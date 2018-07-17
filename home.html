@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script src="jquery-3.2.1.js" type="text/javascript" ></script>
+	<script src="bootstrap.min.js" type="text/javascript" ></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>movie database system</title>
+</head>
+
+<body background="./movies-images/collage1.jpg">
+
+
+<div class="container">
+  
+  <div class="row" style="padding-bottom:60px;margin-top:120px;bacground">
+
+  <div class="col-sm-4">
+  <h2 style="color:white;"><strong>DASHBOARD</strong></h2>
+    <ul class="nav nav-pills nav-stacked">
+    <li class="active" style="color:white;"><a data-toggle="pill" href="#admin"><h5>ADMIN</h5></a></li>
+    <li style="color:white;"><a data-toggle="pill" href="#user"><h5>USER</h5></a></li>
+    <li style="color:white;"><a data-toggle="pill" href="#newuser"><h5>NEW USER</h5></a></li>
+  </ul>
+  </div>
+  <div class="col-sm-8">
+  <div class="tab-content">
+    <div id="admin" class="tab-pane fade in active">
+      <h3 style="color:white;"><strong>ADMIN lOGIN</strong></h3>
+      
+      <br>
+
+      <form action="admin_checklogin.php" method="POST">
+           
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="username" type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+           
+            <br>
+            
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+              <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+
+            <br>
+
+             <input type="submit" name="submit" value="submit" style="
+
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  "
+ />
+
+      </form>      
+
+
+    </div>
+
+    <div id="user" class="tab-pane fade">
+      <h3 style="color:white;"><strong>USER LOGIN</strong></h3>
+      <br>
+      <form action="user_checklogin.php" method="POST">
+           
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="username" type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+           
+            <br>
+            
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+              <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+
+            <br>
+
+            
+
+             <input type="submit" name="submit" value="submit" style="
+
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  "
+ />
+
+      </form>      
+
+<style type="text/css" media="screen">
+.name{
+  box-sizing: content-box;
+
+}  
+</style>
+
+    </div>
+    
+    <div id="newuser" class="tab-pane fade">
+      <h3 style="color:white;"><strong>NEW USER REGISTERATION</strong></h3>
+      <br>
+
+       <form action="register.php" method="POST">
+           
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="username" type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+           
+            <br>
+           
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="ph_number" type="number" class="form-control" name="ph_number" placeholder="Phone Number">
+            </div>
+           
+            <br>
+           
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+              <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+           
+            <br>
+
+            
+             <input type="submit" name="submit" value="submit" style="
+
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  "
+ />
+                        
+          </form>
+
+
+    </div>
+   </div>  
+  </div>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--
+  <div class="container-fluid">
+	  <div class="row">
+		  <div class="col-sm-4">
+				<ul class="nav nav-pills nav-stacked">
+					<li><a href="#admin_area" data-toggle="pill">ADMIN</a></li>
+					<li><a href="#user_area" data-toggle="pill">USER</a></li>
+					<li><a href="#new_user_area" data-toggle="pill">NEW 
+				</ul>
+		  </div>
+		  <div class="col-sm-8 tab-content" style="background-color:lavenderblush;">
+
+      <div class="tab-content">
+        
+			  <div id="admin_area" class="tab-pane fade in active">
+    		  <h3>HOME</h3>
+    		  <p>Some content.</p>
+  		  </div>
+  		
+        <div id="user_area" class="tab-pane fade">
+    		  <h3>Menu 1</h3>
+    		  <p>Some content in menu 1.</p>
+  		  </div>
+  			
+        <div id="new_user_area" class="tab-pane fade">
+    			<h3>Menu 2</h3>
+    			<p>Some content in menu 2.</p>
+
+          <form action="register.php" method="POST">
+           
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="username" type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+           
+            <br>
+           
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="ph_number" type="number" class="form-control" name="ph_number" placeholder="Phone Number">
+            </div>
+           
+            <br>
+           
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+              <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+           
+            <br>
+
+            <input type="submit" name="name" value="submit"/>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+          </form>
+        </div>
+    			
+          
+         </div> 
+        </div>
+      </div>
+	  </div>
+  -->
+</body>
+</html>
