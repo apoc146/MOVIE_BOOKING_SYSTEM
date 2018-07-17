@@ -1,9 +1,11 @@
 # MOVIE_TICKET_BOOKING_SYSTEM
 This allows 
-1)new users to register\n
-2)old users to login\n
-3)admin control\n
-4)choose seats and timings\n
-5)select and book movies\n
-6)recieve confirmation\n
+<ol>
+<li>new users to register</li>
+<li>old users to login</li>
+<li>admin control</li>
+<li>choose seats and timings</li>
+<li>select and book movies</li>
+<li>recieve confirmation</li>
+<ol>
 
